@@ -1,0 +1,72 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 60px;
+	font-family: 'Times new Roman', Times, serif;
+}
+
+#paintCanvas {
+	display: grid;
+	gap: 0;
+	padding: 0;
+	margin-bottom: 30px;
+	border: 5px solid black;
+	width: 400px;
+	height: 400px;
+	user-select: none;
+}
+
+#inputContainer {
+	width: 400px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.cell {
+	margin: 0;
+}
+
+#colorPicker {
+	width: 30px;
+	height: 30px;
+}
+
+#recentColorsContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	margin-top: 20px;
+	width: 300px;
+	height: 20px;
+	border: 1px solid black;
+	padding: 2px;
+}
+
+.recent-color {
+	height: 95%;
+	width: 9.5%;
+	border: 1px solid white;
+}
+
+.selected-color {
+	height: 98%;
+	width: 9.8%;
+}
+
+.setting-selected {
+	background: lightgreen;
+}
+
+.borders {
+	border: 1px solid black;
+}
+
+#showBordersBtn {
+	white-space: normal;
+	width: 70px;
+}

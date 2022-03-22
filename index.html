@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PaintJS</title>
+		<link rel="stylesheet" href='cssreset.css'>
+		<link rel='stylesheet' href='styles.css'>
+	</head>
+	<body>
+		<h1>PaintJS</h1>
+		<div id='paintCanvas'></div>
+
+
+
+		<div id='inputContainer'>
+			<input type="color" id="colorPicker">
+			<button type="button" id="eraserBtn">Erase</button>
+			<button type="button" id="showBordersBtn">Show Borders</button>
+			<button type="button" id="resetBtn">Reset</button>
+			<select id="selectedSize">
+				<option value="20">20 x 20</option>
+				<option value="30">30 x 30</option>
+				<option value="60">60 x 60</option>
+				<option value="100">100 x 100</option>
+			</select>
+		</div>
+		<div id="recentColorsContainer"></div>
+
+		<script src='main.js'></script>
+	</body>
+</html>
