@@ -70,3 +70,11 @@ h1 {
 	white-space: normal;
 	width: 70px;
 }
+
+#saveBtn {
+	position: fixed;
+	right: 5px;
+	bottom: 60px;
+	white-space: normal;
+	width: 70px;
+}
