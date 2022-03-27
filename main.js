@@ -5,6 +5,7 @@ const selectedSize = document.querySelector("#selectedSize");
 const recentColorsContainer = document.querySelector("#recentColorsContainer");
 const eraserBtn = document.querySelector("#eraserBtn");
 const showBordersBtn = document.querySelector("#showBordersBtn");
+const saveBtn = document.querySelector("#saveBtn");
 
 
 const DEFAULT_SIZE = 20;
@@ -106,7 +107,19 @@ function changeColor(e) {
 	}
 }
 
+function saveImage() {
+	html2canvas(paintCanvas).then(
+		function (canvas) {
+			window.open(canvas.toDataURL('image/png'));
+			const convert = canvas.toDataURL('png');
 
+			const a = document.createElement('a');
+			a.href = convert;
+			a.download = 'image.png';
+			a.click();
+		})
+}
+saveBtn.addEventListener("click", saveImage)
 
 
 function resetGrid() {
